@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AgendaV1</string>
+    <string name="nuevo_contacto">Nuevo Contacto</string>
+    <string name="modificar_contacto">Modificar Contacto</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Telefono</string>
+    <string name="foto">Foto</string>
+    <string name="direccion">Dirección</string>
+    <string name="email">Dirección e-mail</string>
+    <string name="web">Pagina Web</string>
+    <string name="modificar">Modificar</string>
+    <string name="baja">Baja</string>
+    <string name="añadir">Añadir contacto</string>
+    <string name="contactoAñadido">Contacto añadido correctamente</string>
+    <string name="contactoBorrado">El contacto se ha borrado correctamente</string>
+    <string name="contactoModificado">El contacto se ha modificado correctamente</string>
+    <string name="fotoGuardada">Foto guardada correctamente</string>
+    <string name="telefonoGuardado">Telefono añadadido correctamente</string>
+    <string name="error">Rellene campos "Nombre" y "Teléfono" para continuar</string>
+</resources>

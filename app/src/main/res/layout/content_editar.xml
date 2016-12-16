@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_editar">
+
+
+    <TextView
+        android:text="@string/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbTel"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/tfNombreNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lDireccion"
+        android:layout_below="@+id/tfTelefonoNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/lDireccion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tfDireccionNuevo"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_toLeftOf="@+id/imageButton7"
+        android:layout_toStartOf="@+id/imageButton7" />
+
+    <TextView
+        android:text="@string/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvDir"
+        android:layout_below="@+id/tfDireccionNuevo"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbPW"
+        android:layout_below="@+id/tfEmailNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="@string/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tfWebNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lbFoto"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tfFotoNuevo"
+        android:layout_below="@+id/lbFoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:textColor="@color/colorPrimary"
+        android:layout_toLeftOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imagen"
+        android:layout_below="@+id/tfWebNuevo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton2"
+        android:onClick="nuevaFoto"
+        android:backgroundTint="@android:color/transparent" />
+
+    <TextView
+        android:text="@string/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbNombre"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignBottom="@+id/ivNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5"
+        android:id="@+id/imageButton8"
+        android:layout_below="@+id/tfEmailNuevo"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:onClick="irWeb"
+        android:backgroundTint="@android:color/transparent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tfEmailNuevo"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/lvDir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageButton7"
+        android:layout_toStartOf="@+id/imageButton7" />
+
+    <ImageView
+        app:srcCompat="@drawable/user"
+        android:id="@+id/ivNuevo"
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tfNombreNuevo"
+        android:layout_toEndOf="@+id/tfNombreNuevo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/tfTelefonoNuevo"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/lbTel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tfNombreNuevo"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@+id/ivNuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tfWebNuevo"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/lbPW"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:id="@+id/imageButton6"
+        android:onClick="borrarContacto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lDireccion"
+        android:layout_alignEnd="@+id/lDireccion"
+        android:backgroundTint="@android:color/transparent"
+        android:tint="@color/colorAccent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        android:id="@+id/imageButton9"
+        android:onClick="modificarContacto"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"
+        android:tint="@android:color/holo_blue_dark" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_action_call"
+        android:id="@+id/imageButton5"
+        android:onClick="Llamada"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:backgroundTint="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:id="@+id/imageButton7"
+        android:onClick="mandarEmail"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/imageButton8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/transparent"
+        android:tint="@android:color/holo_blue_bright" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/whatsapp"
+        android:id="@+id/imageButton10"
+        android:onClick="hablaWhatsapp"
+        android:layout_above="@+id/imageButton7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tint="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/transparent" />
+
+
+</RelativeLayout>

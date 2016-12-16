@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.haykuproductions.agendav1.MainActivity">
+
+    <item
+        android:id="@+id/nuevo_contacto"
+        android:orderInCategory="100"
+        android:title="nuevo_contacto"
+        app:showAsAction="always"
+        android:icon="@drawable/anadircontacto"/>
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    --android:layout_height="?android:attr/listPreferredItemHeight" >
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:text="nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/imagen"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:text="telefono"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        android:layout_below="@id/tvTitulo"
+        android:layout_toRightOf="@+id/imagen"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:text="email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_below="@id/tvTelefono"
+        android:layout_toRightOf="@+id/imagen"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:padding="5dp" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/user"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="110dp"
+        android:padding="5dp" />
+
+
+</RelativeLayout>
